@@ -1,0 +1,162 @@
+
+
+.slide_image{
+    height: 500px;
+}
+
+.footer{
+    color: white;
+    text-decoration: none;
+}
+
+.white-color{
+    color: white;
+}
+.footer-height{
+    height: 25px;
+}
+
+
+.navbackground{
+    background-color: rgb(93, 6, 117);
+    
+}
+
+.outer-div{
+    background-color: rgb(223, 212, 233);
+}
+
+.inner-div{
+    height: 60px;
+    background-color: blueviolet; 
+    color: white;
+}
+
+
+
+.login-inner-div{
+    height: 483px; background-color: rgb(223, 212, 233);
+}
+.login-outer-div{
+    height: 60px; margin-top: 92px; background-color: blueviolet; color: white;
+}
+
+
+
+.textbox {
+    height: 35px;
+    width: 70%;
+    float: right;
+    padding-left: 10px;
+    border-radius: 10px; color: gray;
+    border: none;
+}
+
+        
+    
+.bodybgcolor{
+    background-color: #9a949a;
+}
+
+.select-style{
+    border-radius: 10px; color: gray;
+    width: 70%;
+    float: right;
+    border: none;
+}
+
+.textarea-style{
+    border-radius: 10px; color: gray;
+    padding-left: 10px;
+    width: 70%;
+    float: right;
+    border: none;
+}
+
+
+.input-box{
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    float: right;
+    
+}
+
+.genderInput{
+    margin-left: 20%;
+}
+
+
+input.btn{
+    
+    border-radius: 10px;
+    background-color: blueviolet; 
+    color: white;
+}
+
+.contact-btn{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet; 
+    color: white;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
+
+.toggle-hide-show {
+    
+    position: absolute;
+    width: auto;
+}
+.label-style{
+    width: 100%;
+    
+}
+.message-style{
+    width: 100%;
+    
+}
+
+.messagearea-style{
+    border-radius: 10px; color: gray;
+    padding-left: 10px;
+    width: 84%;
+    float: right;
+    border: none;
+    margin-right: 15px;
+}
+
+.div2{
+    display: flex;
+    height: 40px;
+}
+.div3{
+  
+    height: 100px;
+}
+.div1{
+    display: flex;
+    height: 40px;
+}
+
+
+
+.message-head{
+    color: blueviolet;
+    align-items: center;
+}
+
+/* For validation errors*/
+.error{
+    color: red;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .paragraph{
+    text-align: justify;
+  }

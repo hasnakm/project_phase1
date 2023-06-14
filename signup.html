@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+</head>
+<body class="bodybgcolor">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light " style="background-color: rgb(93, 6, 117);" >
+        <div class="container-fluid" >
+          <img src="images/logo.png" width="100" height="50" >
+          <h1 class="white-color">MacroTech</h1>
+          <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+              <li class="nav-item pt-2 pb-2">
+                  <a class="nav-link" href="index.html" style="color: white;">Home</a>    
+              </li>
+              <li class="nav-item pt-2 pb-2">
+                  <a class="nav-link" href="about.html" style="color: white;">About us</a>
+              </li>
+              <li class="nav-item pt-2 pb-2">
+                  <a class="nav-link" href="login.html" style="color: white;">Sign in</a>
+              </li>
+              
+              <li class="nav-item pt-2 pb-2">  
+                <a class="nav-link" href="contact.html" style="color: white;">Contact us</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    
+
+   
+    <div class="outer-div container-fluid border ml-40 mr-40 mt-2 mb-2 col-md-5">
+        <div class="" >
+          <div  class="inner-div text-center">
+            <h2 class="m-2 pt-2">Sign up Form</h2></div>
+            
+            <form id="signupform">
+              <label for="firstname" class="m-2 label-style">First name
+                <input name="firstname" class="textbox" type="text" placeholder="First name" >
+              </label>
+              <label for="lastname" class="m-2 label-style">Second name
+                <input name="lastname" class="textbox" type="text" placeholder="Last name" >
+              </label>  
+              <label for="date_of_birth" class="m-2 label-style">Date of birth
+                <input name="date_of_birth" id="date_of_birth" class="textbox" type="date" onchange="calculateAge()" placeholder="Date of Birth" max="2022-12-31">
+              </label>  
+              <label for="age" class="m-2 label-style">Age
+                <input name="age" id="age" class="textbox"  type="text" placeholder="Age" readonly>
+              </label>
+              <label for="gender" class="m-2 label-style">Gender
+                <input  class="ml-2 genderInput" type="radio" name="gender" value="Female">Female
+                <input  class="m-2 " type="radio" name="gender" value="Male">Male 
+                <input  class="m-2 " type="radio" name="gender" value="Other">Other
+              </label>
+              <label for="phonenumber" class="m-2 label-style">Phone number
+                <input name="phonenumber" class="textbox" type="number" placeholder="Phone number" >
+              </label>
+              <label for="emailaddress" class="m-2 label-style">Email
+                <input name="emailaddress" class="textbox" type="email" placeholder="Email address" >
+              </label>
+              <label for="address" class="m-2 label-style">Address 
+                <textarea name="address" id="" class="textarea-style" rows="3" placeholder="Address" ></textarea>
+              </label>  
+              <label for="stateSelect" class="m-2 label-style">State: 
+                <select id="stateSelect" name="stateSelect" size="1" class="select-style p-1" onchange="makeSubmenu(this.value)">
+                  <option value="">Select state</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Tamilnadu">Tamilnadu</option>
+                  <option value="Karnataka">Karnataka</option>
+                </select>
+              </label> 
+              <label for="citySelect" class=" m-2 label-style">City:
+                <select name="citySelect" id="citySelect" size="1" placeholder="Select City" class="p-1 select-style">
+                  <option value="">Select city</option>
+                  <option></option>
+                </select>
+              </label>
+              <label for="username" class="m-2 label-style">Username  
+                <input name="username" class="textbox" type="text" placeholder="Username" >
+              </label>
+              <label for="password" class="m-2 label-style">Password  
+                <input name="password" class="textbox" type="password" placeholder="Password" >
+              </label>
+              <label for="confirm_password" class="m-2 label-style">Confirm password
+                <input name="confirm_password" class="textbox" type="password" placeholder="Confirm password" >
+              </label>  
+            <input class="form-control p-2 m-2"  style="background-color: blueviolet; color: white;" type="submit" value="Sign up">
+            <h6 class="text-center">Already have an account? <a href="login.html" style="text-decoration: none;">Login now</a></h6>
+            </form>
+            
+            
+            </div>
+        
+        </div>
+
+
+        
+        <footer>
+          <div class="text-center navbackground footer-height">
+              
+          <a href="https://www.facebook.com" class="fa fa-facebook footer"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter ml-3 footer" ></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin ml-3 footer" ></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram ml-3 footer"></a>
+          <a href="https://www.youtube.com" class="fa fa-youtube ml-3 footer"></a>
+          </div>
+          <div class="text-center navbackground footer-height white-color" >
+          &copy;Copyright. All Rights Reserved</div>
+      </footer>
+
+
+ <!--JQuery cdn-->
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<!--JQuery validation-->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+       
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="js/signup.js"></script>
+</body>
+</html>
+
